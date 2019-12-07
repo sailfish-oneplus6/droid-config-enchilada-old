@@ -5,6 +5,7 @@ Description: Pattern with packages for enchilada HW Adaptation
 Name: jolla-hw-adaptation-enchilada
 Requires:
 - droid-hal-enchilada
+- droid-hal-enchilada-detritus
 - droid-hal-enchilada-img-boot
 - droid-hal-enchilada-kernel-modules
 - droid-config-enchilada-sailfish
@@ -19,6 +20,12 @@ Requires:
 - libhybris-libEGL
 - libhybris-libGLESv2
 - libhybris-libwayland-egl
+
+# Telephony
+- ofono-ril-binder-plugin
+
+# Flashlight
+- jolla-settings-system-flashlight
 
 # Sensors
 - hybris-libsensorfw-qt5
@@ -79,8 +86,8 @@ Requires:
 #- jolla-mediaplayer-radio
 
 # NFC for devices using Android 8 or newer as base
-#- nfcd-binder-plugin
-#- jolla-settings-system-nfc
+- nfcd-binder-plugin
+- jolla-settings-system-nfc
 
 Summary: Jolla HW Adaptation enchilada
 
