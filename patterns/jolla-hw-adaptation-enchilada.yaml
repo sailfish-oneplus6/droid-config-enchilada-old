@@ -17,7 +17,8 @@ Requires:
 - droid-hal-version-enchilada
 
 # fix audioflinger
-#- audioflingerglue
+- audioflingerglue
+- pulseaudio-modules-droid-glue
 
 # Hybris packages
 - libhybris-libEGL
@@ -42,7 +43,7 @@ Requires:
 
 - pulseaudio-modules-droid
 # for call audio
-#- pulseaudio-modules-droid-hidl
+- pulseaudio-modules-droid-hidl
 # for audio recording to work:
 - qt5-qtmultimedia-plugin-mediaservice-gstmediacapture
 
