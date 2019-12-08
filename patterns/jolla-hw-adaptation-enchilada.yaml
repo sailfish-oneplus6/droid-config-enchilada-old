@@ -16,6 +16,9 @@ Requires:
 - droid-config-enchilada-bluez5
 - droid-hal-version-enchilada
 
+# fix audioflinger
+#- audioflingerglue
+
 # Hybris packages
 - libhybris-libEGL
 - libhybris-libGLESv2
@@ -38,6 +41,8 @@ Requires:
 - qt5-plugin-generic-evdev
 
 - pulseaudio-modules-droid
+# for call audio
+#- pulseaudio-modules-droid-hidl
 # for audio recording to work:
 - qt5-qtmultimedia-plugin-mediaservice-gstmediacapture
 
@@ -53,7 +58,7 @@ Requires:
 - gstreamer1.0-plugins-bad
 - nemo-gstreamer1.0-interfaces
 # For devices with droidmedia and gst-droid built, see HADK pdf for more information
-#- gstreamer1.0-droid
+- gstreamer1.0-droid
 
 # This is needed for notification LEDs
 - mce-plugin-libhybris
@@ -61,8 +66,8 @@ Requires:
 ## USB mode controller
 # Enables mode selector upon plugging USB cable:
 - usb-moded
-- usb-moded-defaults-android
-- usb-moded-developer-mode-android
+#- usb-moded-defaults-android
+#- usb-moded-developer-mode-android
 
 # Extra useful modes not officially supported:
 # might need some configuration to get working
