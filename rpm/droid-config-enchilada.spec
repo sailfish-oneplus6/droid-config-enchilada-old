@@ -23,7 +23,7 @@ Obsoletes: ofono-configs-mer
 
 # Fix for MTP using sparse usb-moded config
 Provides: usb-moded-configs
-Obsolete: usb-moded-defaults
+Obsoletes: usb-moded-defaults
 
 %include droid-configs-device/droid-configs.inc
 
