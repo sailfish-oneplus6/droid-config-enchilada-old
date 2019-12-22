@@ -1,5 +1,7 @@
 #!/bin/bash
 
+exit 0 # shouldn't be needed anymore
+
 sleep 1
 cat << EOF > /persist/wlan_mac.bin
 Intf0MacAddress=583653F9A264
